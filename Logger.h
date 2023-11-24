@@ -2,7 +2,7 @@
 #define LOGGER_H
 
 // Uncomment (and change if necessary) to enable serial debug logging.
-#define LOGGER Serial
+// #define LOGGER Serial
 
 #if defined(LOGGER)
     #define LOG(...) LOGGER.print(__VA_ARGS__)
