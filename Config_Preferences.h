@@ -18,7 +18,7 @@
 #define SLEEP_WARN_INTERVAL          (10 * 1000u)
 
 // Status LED brightness (0-255)
-#define STATUS_LED_NORMAL_BRIGHTNESS    40
+#define STATUS_LED_NORMAL_BRIGHTNESS    20
 #define STATUS_LED_DIM_BRIGHTNESS       10
 
 // Status colors
