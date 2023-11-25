@@ -351,11 +351,10 @@ bool handleToggles(char key) {
 
         if (key == config.getKey()) {
             const bool newToggleState = !toggleState.toggleState;
-
-            activityFlash();
             setToggleState(toggleState, newToggleState);
 
             LOGFMT("Toggled topic '%s', value: %s\n", config.getToggleTopic().c_str(), newToggleState ? "1" : "0");
+            activityFlash();
             return true;
         }
     }    
@@ -377,6 +376,7 @@ bool handleMacros(char key) {
                 LOGFMT("Executed macro for topic '%s', message: %s\n", command.topic, command.message);
             }
 
+            activityFlash();
             return true;
         }
     }
